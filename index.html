@@ -78,41 +78,12 @@
 
         <section id="like" class="section section-dark">
           <h1 class="section-title">Give me a Like</h1>
-
-          <iframe
-            src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2FRickandMorty&width=450&layout=standard&action=like&size=small&share=false&height=35&appId=73495558738"
-            width="450"
-            height="35"
-            style="border: none; overflow: hidden"
-            scrolling="no"
-            frameborder="0"
-            allowfullscreen="true"
-            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
-          ></iframe>
+          <iframe id="like-button" src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2FRickandMorty&width=108&layout=button_count&action=like&size=large&share=false&height=21&appId=73495558738" width="108" height="40" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
         </section>
 
-        <section id="qrcoder" class="section">
+        <section id="qrcode-section" class="section">
           <h1 class="section-title">Scan My Code</h1>
-
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
+          <img src="images/qrcode.png"/>
         </section>
 
         <section id="qna" class="section section-dark" style="direction: rtl">
@@ -213,9 +184,13 @@
         <section id="contact" class="section">
           <h1 class="section-title">Contact Me</h1>
           <div id="contact-form-container">
-            <form id="contact-form">
+            <form id="contact-form" 
+            action="mailto:yitzhakh@post.bgu.ac.il?subject="+${subject}
+method="post"
+enctype="text/plain"
+            >
               <input id="name" type="text" placeholder="NAME" class="contact-form-input"/>
-              <input id="email" type="text" placeholder="E-MAIL" class="contact-form-input"/>
+              <input id="subject" type="text" placeholder="SUBJECT" class="contact-form-input"/>
               <textarea
                 id="contact-form-message"
                 type="textbox"

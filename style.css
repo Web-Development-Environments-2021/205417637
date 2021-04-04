@@ -51,9 +51,6 @@ body{
 	background-color: 	#62a4ab;
 }
 
-#main{
-}
-
 .section{
 	padding-top: 35px;
 	padding-left: 10%;
@@ -109,16 +106,26 @@ body{
 	text-align: center;
 }
 
-#like{
+.top-header-nav{
+position:-webkit-sticky;
+position: sticky;
+top: 0;
 }
-  .top-header-nav{
-	position:-webkit-sticky;
-	position: sticky;
-	top: 0;
-  }
+
+#like{
+	text-align: center;
+}
+
+#like-button{
+	margin: 10px;
+}
 
 .qna{
 	font-family: 'Arimo', sans-serif;
+}
+
+#qrcode-section{
+	text-align: center;
 }
 
 
