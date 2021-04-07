@@ -194,25 +194,28 @@
         <section id="contact" class="section section-light">
           <h1 class="section-title">Contact Me</h1>
           <div id="contact-form-container">
-            <form id="contact-form" action="mailto:yitzhakh@post.bgu.ac.il">
+            <form id="contact-form" action="mailto:yitzhakh@post.bgu.ac.il" method="post" encrypted="text/plain"> 
               <input
                 id="name"
                 type="text"
+                name="name"
                 placeholder="NAME"
                 class="contact-form-input"
               />
               <input
                 id="subject"
                 type="text"
+                name="subject"
                 placeholder="SUBJECT"
                 class="contact-form-input"
               />
-              <textarea
+              <input
                 id="contact-form-message"
-                type="textbox"
+                type="textarea"
+                name="comment"
                 placeholder="MESSAGE"
                 data-emoji-picker="true"
-              ></textarea>
+              />
               <input
                 id="submit"
                 type="submit"
